@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { FaFacebookF, FaTwitter, FaInstagram } from 'react-icons/fa';
-import { FaBars, FaTimes } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
+import { FaFacebookF, FaTwitter, FaInstagram, FaBars, FaTimes } from 'react-icons/fa';
 import Logo from '../assets/logo.jpg';
 
 const Header = () => {
@@ -30,24 +30,24 @@ const Header = () => {
           className={`${
             isOpen ? 'flex flex-col items-center mt-4' : 'hidden'
           } absolute z-50 top-16 left-0 w-full md:p-0 p-4 bg-white md:shadow-none shadow-lg md:bg-transparent md:static md:flex justify-center space-0 font-serif text-lg md:text-sm md:space-x-8`}>
-          <a href="#" className="block py-2 px-2 text-gray-400 hover:text-green-800 md:py-0 md:px-0">
+          <Link to="/" className="block py-2 px-2 text-gray-400 hover:text-green-800 md:py-0 md:px-0">
             Home
-          </a>
-          <a href="#" className="block py-2 px-4 text-gray-400 hover:text-green-800 md:py-0 md:px-0">
+          </Link>
+          <Link to="/about" className="block py-2 px-4 text-gray-400 hover:text-green-800 md:py-0 md:px-0">
             About
-          </a>
-          <a href="#" className="block py-2 px-4 text-gray-400 hover:text-green-800 md:py-0 md:px-0">
+          </Link>
+          <Link to="/online-admission" className="block py-2 px-4 text-gray-400 hover:text-green-800 md:py-0 md:px-0">
             Online Admission
-          </a>
-          <a href="#" className="block py-2 px-4 text-gray-400 hover:text-green-800 md:py-0 md:px-0">
+          </Link>
+          <Link to="/gallery" className="block py-2 px-4 text-gray-400 hover:text-green-800 md:py-0 md:px-0">
             Gallery
-          </a>
-          <a href="#" className="block py-2 px-4 text-gray-400 hover:text-green-800 md:py-0 md:px-0">
+          </Link>
+          <Link to="/global-connection" className="block py-2 px-4 text-gray-400 hover:text-green-800 md:py-0 md:px-0">
             Global Connection
-          </a>
-          <a href="#" className="block py-2 px-4 text-gray-400 hover:text-green-800 md:py-0 md:px-0">
+          </Link>
+          <Link to="/contact" className="block py-2 px-4 text-gray-400 hover:text-green-800 md:py-0 md:px-0">
             Contact
-          </a>
+          </Link>
 
           {/* Social Media Icons */}
           <div className="flex justify-center md:justify-start mt-4 space-x-4 text-xl text-green-800 md:hidden">
@@ -78,6 +78,6 @@ const Header = () => {
       </div>
     </header>
   );
-}
+};
 
 export default Header;

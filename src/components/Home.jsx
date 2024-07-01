@@ -1,4 +1,5 @@
 import React, { useState } from 'react'; // Add useState here
+import { Link } from 'react-router-dom';
 import Background from '../assets/background.jpg';
 import Principal from '../assets/principal.jpg';
 import Canteen from '../assets/canteen.jpg';
@@ -47,9 +48,9 @@ const Home = () => {
             <h1 className="text-xl md:text-6xl md:ml-[15%] md:mb-4 font-serif font-thin">St Joseph</h1>
             <h1 className="text-xl md:text-5xl md:ml-[15%] md:mb-4 mb-2 font-serif font-thin">English Academy</h1>
             <p className="md:ml-[15%] text-md md:text-xl md:italic mb-2 md:mb-8 font-thin">Education for a prosperous and Better Nation</p>
-            <button herf='#' className='md:ml-[15%] md:py-2 md:px-4 p-2 text-sm border-2 bg-white text-green-800 font-bold font-serif rounded hover:text-white hover:border-white hover:bg-transparent transition duration-500 ease-in-out'>
-                Online Admission
-            </button>
+            <Link to="/online-admission" className="md:ml-[15%] md:py-2 md:px-4 p-2 text-sm border-2 bg-white text-green-800 font-bold font-serif rounded hover:text-white hover:border-white hover:bg-transparent transition duration-500 ease-in-out">
+              Online Admission
+            </Link>
           </div>
         </div>
       </section>
@@ -75,9 +76,9 @@ const Home = () => {
               Welcome to St. Joseph's English Academy. We are serving in the education sector at local level since 1999. We are very pleased to be part of this community and enjoy the close relationships that we have with our locality in serving students. <br/><br/>
               Our school continues to garner for the individual work we are accomplishing with students daily with options we provide.
             </p>
-            <button href="#" className="md:mt-4 mt-2 hover:text-gray-400 text-gray-800 text-sm flex items-center">
-            Know more about us <span className="ml-1">&#8594;</span>
-            </button>
+            <Link to="/about" className="md:mt-4 mt-2 hover:text-gray-400 text-gray-800 text-sm flex items-center">
+              Know more about us <span className="ml-1">&#8594;</span>
+            </Link>
           </div>
         </div>
       </section>
@@ -90,7 +91,7 @@ const Home = () => {
                 <p className='text-sm mt-2 text-gray-600'>SEE Toppers</p>
             </div>
             <div class="p-4 text-center">
-                <h3 className='text-3xl md:text-5xl font-bold text-green-900'>1k+</h3>
+                <h3 className='text-3xl md:text-5xl font-bold text-green-900'>2k+</h3>
                 <p className='text-sm mt-2 text-gray-600'>Enrolments</p>
             </div>            
             <div class="p-4 text-center">
@@ -126,9 +127,9 @@ const Home = () => {
                 Dhambar Singh K.C - Principal
             </p>
             <div className='flex justify-end md:mt-0 mt-4'>
-                <button className='text-sm text-gray-800 hover:text-gray-400 flex items-center'>
-                    Read More <span className="ml-1">&#8594;</span>
-                </button>
+                <Link to="/about" className="text-sm text-gray-800 hover:text-gray-400 flex items-center">
+                  Read More <span className="ml-1">&#8594;</span>
+                </Link>
             </div>
         </div>
       </section>
@@ -238,7 +239,7 @@ const Home = () => {
     </div>
     </section>
 
-        <section className="p-4 md:px-[20%] text-white">
+        <section className="p-4 md:px-[20%] mb-4 md:mb-8 text-white">
             <div className="mt-4 px-4 p-4 md:py-8 bg-green-900 rounded-md">
                 <p className="mb-2 text-lg md:text-2xl text-center font-serif md:px-[20%]">
                 Wish to know more about admission and updates? Subscribe Now!

@@ -4,7 +4,7 @@ import Logo from '../assets/logo.jpg';
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-100 p-8">
+    <footer className="bg-gray-100 p-8 md:px-[5%]">
       <div className="container mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-4 text-center md:text-left mb-8">
           <div className="md:col-span-2 flex flex-col items-center md:items-start md:pl-32 pt-2">
@@ -25,21 +25,26 @@ const Footer = () => {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
           <div className="hidden md:flex flex-col items-center md:items-center pt-2 hover:cursor-pointer">
+            <a herf="/#">
             <img src={Logo} alt="Logo" className="h-20 w-auto" />
+            </a>
           </div>
           <div className="flex flex-col items-center md:mt-8 md:items-center">
-            <div className="grid grid-cols-4 gap-2">
+            <div className="grid grid-cols-2 md:grid-cols-5 gap-2">
               <ul className="space-y-1">
-                <li><a href="#" className="hover:text-yellow-400 text-gray-700">Home</a></li>
+                <li><a href="/" className="hover:text-yellow-400 text-gray-700">Home</a></li>
               </ul>
               <ul className="space-y-1">
-                <li><a href="#" className="hover:text-yellow-400 text-gray-700">About</a></li>
+                <li><a href="/School/about" className="hover:text-yellow-400 text-gray-700">About</a></li>
               </ul>
-            <ul className="space-y-1">
-                <li><a href="#" className="hover:text-yellow-400 text-gray-700">Academics</a></li>
+              <ul className="space-y-1">
+                <li><a href="/School/gallery" className="hover:text-yellow-400 text-gray-700">Gallery</a></li>
               </ul>
-            <ul className="space-y-1">
-                <li><a href="#" className="hover:text-yellow-400 text-gray-700">Contact</a></li>
+              <ul className="space-y-1">
+                <li><a href="/School/contact" className="hover:text-yellow-400 text-gray-700">Contact</a></li>
+              </ul>
+              <ul className="space-y-1">
+                <li><a href="/School/online-admission" className="hover:text-yellow-400 text-gray-700">Academy</a></li>
               </ul>
             </div>
           </div>
@@ -53,7 +58,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="mt-8 text-center text-gray-800">
-          <p>School Name &copy; 2024 - Friends and Co.</p>
+          <p>St. Joseph's English Academy &copy; 2024 - Friends and Co.</p>
         </div>
       </div>
     </footer>
