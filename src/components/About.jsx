@@ -93,7 +93,7 @@ const About = () => {
                 <h2 className="text-md font-semibold font-serif text-center md:text-start">Our Mission</h2>
               </div>
               <div className="col-span-1 md:ml-[-30%] p-4 md:py-7 md:px-2 md:border-t-2 md:border-gray-300">
-                <p className='text-sm font-thin text-center md:text-star'>
+                <p className='text-sm font-thin text-center md:text-start'>
                   Our mission at St. Joseph's English Academy is to develop the unique abilities and the potential of each child by offering an enriched education program. 
                   We strive for excekkebce through a hands-on approach. 
                   Rich traditions rooted in our innovative curriculum grow productive, caring, and intellectually curious citizens.
@@ -105,7 +105,7 @@ const About = () => {
                 <h2 className="text-md font-semibold font-serif text-center md:text-start">Our Vision</h2>
               </div>
               <div className="col-span-1 md:ml-[-30%] p-4 md:py-[48px] md:px-2 md:border-t-2 md:border-gray-300">
-                <p className='text-sm font-thin text-center md:text-star'>
+                <p className='text-sm font-thin text-center md:text-start'>
                   We have a culture that is mordern, relevant and inspires students to have a bright future. 
                   We are determined in our approach to learn are creativr in our thinking and bold in ambitions.
                 </p>
@@ -116,7 +116,7 @@ const About = () => {
                 <h2 className="text-md font-semibold font-serif text-center md:text-start">Objectives</h2>
               </div>
               <div className="col-span-1 p-4 md:ml-[-30%] md:py-7 md:px-2 md:border-t-2 md:border-gray-300">
-                <p className='text-sm font-thin text-center md:text-star'>
+                <p className='text-sm font-thin text-center md:text-start'>
                   We at St. Joseph's English Academy follow a child-centered education approach. 
                   We make sure that is based on scientific observatiobn from birth to adulthood. 
                   We belive that a child is naturally curious and is capable of initating learning in a supportive and thoughtfully prepared environmenr.
