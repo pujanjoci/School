@@ -1,5 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import Principal from '../assets/principal.jpg'; // Assuming Principal image is used for all teachers for now
+import Principal from '../assets/principal.jpg';
+import Image1 from './Global/image1.jpg';
+import Image2 from './Global/image2.jpg';
+import Image3 from './Global/image3.jpg';
+
 import { ImQuotesLeft } from "react-icons/im";
 import teachersData from './About/Teacher.json'; // Import the JSON data
 
@@ -11,9 +15,16 @@ const About = () => {
   }, []);
 
   const getImageById = (id) => {
-    // For simplicity, using the same image for all teachers
-    // Take the id from the Teacher.json and add images according to the id for the teacher in the about page and show it here or import it directly
-    return Principal;
+    switch (id) {
+      case 1:
+        return Image1;
+      case 2:
+        return Image2;
+      case 3:
+        return Image3;
+      default:
+        return Principal;
+    }
   };
 
   return (
@@ -24,7 +35,7 @@ const About = () => {
         </h1>
       </div>
 
-      <section className=' md:pt-10 pt-2'>
+      <section className='md:pt-10 pt-2'>
         <div className="grid grid-cols-2 md:gap-8 gap-2 items-center md:px-[20%] px-8 md:mt-12 mt-4">
           <div className="flex justify-end">
             <h2 className="text-md md:text-4xl mb-2 md:mb-6 font-serif text-gray-700 relative">
@@ -137,7 +148,7 @@ const About = () => {
           <div className="grid grid-cols-2 gap-4 md:gap-8 md:grid-cols-4 px-8 md:px-[20%]">
             {teachers.map((teacher) => (
               <div key={teacher.id} className="flex flex-col items-center">
-                <img src={getImageById(teacher.id)} alt={teacher.name} className="w-auto h-full rounded-lg mb-2" />
+                <img src={getImageById(teacher.id)} alt={teacher.name} className="w-auto h-[120px] rounded-lg mb-2" />
                 <p className="text-center text-sm">{teacher.name}</p>
                 <p className="text-center text-xs text-gray-500">{teacher.position}</p>
               </div>
