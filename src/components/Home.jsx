@@ -10,6 +10,7 @@ import Extra from '../assets/extra.jpg';
 
 import Video from '../assets/video.mp4';
 import { ImQuotesLeft } from "react-icons/im";
+import ScrollToTopLink from './ScrollToTopLink';
 
 const Home = () => {
   const [email, setEmail] = useState('');
@@ -76,9 +77,9 @@ const Home = () => {
               Welcome to St. Joseph's English Academy. We are serving in the education sector at local level since 1999. We are very pleased to be part of this community and enjoy the close relationships that we have with our locality in serving students. <br/><br/>
               Our school continues to garner for the individual work we are accomplishing with students daily with options we provide.
             </p>
-            <Link to="/about" className="md:mt-4 mt-2 hover:text-gray-400 text-gray-800 text-sm flex items-center">
+            <ScrollToTopLink to="/about" className="md:mt-4 mt-2 hover:text-gray-400 text-gray-800 text-sm flex items-center">
               Know more about us <span className="ml-1">&#8594;</span>
-            </Link>
+            </ScrollToTopLink>
           </div>
         </div>
       </section>
@@ -115,7 +116,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="p-2 md:mt-16 md:p-8">
+      <section className="p-2 md:pt-12 md:p-8">
         <div className='md:px-[18%] px-2'>
             <h3 className='text-2xl md:pl-2 md:pb-4 p-2 text-green-600'>
                 <ImQuotesLeft />
@@ -127,9 +128,9 @@ const Home = () => {
                 Dhambar Singh K.C - Principal
             </p>
             <div className='flex justify-end md:mt-0 mt-4'>
-                <Link to="/about" className="text-sm text-gray-800 hover:text-gray-400 flex items-center">
-                  Read More <span className="ml-1">&#8594;</span>
-                </Link>
+            <ScrollToTopLink to="/about" className="md:mt-4 mt-2 hover:text-gray-400 text-gray-800 text-sm flex items-center">
+              Know more about us <span className="ml-1">&#8594;</span>
+            </ScrollToTopLink>
             </div>
         </div>
       </section>

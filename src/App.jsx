@@ -11,7 +11,7 @@ import Footer from './components/Footer';
 
 const App = () => {
   return (
-    <Router basename="/School">
+    <Router basename="/School/">
       <div>
         <Header />
         <Routes>
