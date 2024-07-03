@@ -94,7 +94,7 @@ const Contact = () => {
             <textarea id='message' name='message' rows='4' placeholder='Messages' className='w-full p-2 border border-gray-300' disabled={isSubmitting} required></textarea>
           </div>
           <div className='flex justify-center md:justify-start'>
-            <button type='submit' className={`px-4 py-2 border rounded-md ${isButtonLocked ? 'bg-gray-400 border-gray-400 text-gray-700' : 'bg-green-800 border-gray-100 hover:bg-gray-100 hover:border-indigo-800 hover:text-green-800 text-white'}`} disabled={isSubmitting || isButtonLocked}>
+            <button type='submit' className={`px-4 py-2 border rounded-md ${isButtonLocked ? 'bg-gray-400 border-gray-400 text-gray-700' : 'bg-green-800 border-gray-100 hover:bg-gray-100 hover:border-indigo-800 hover:text-green-800 text-white transition duration-500 ease-in-out'}`} disabled={isSubmitting || isButtonLocked}>
               {isSubmitting ? 'Submitting...' : isButtonLocked ? 'Submitted' : 'Submit'}
             </button>
           </div>
