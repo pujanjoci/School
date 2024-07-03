@@ -211,7 +211,7 @@ const Home = () => {
         />
         </div>
         <div className="text-left md:text-left p-2 order-1 md:order-2">
-        <h2 className="text-md md:text-4xl md:pr-60 mb-2 md:mb-6 font-serif text-gray-700 relative">
+        <h2 className="text-xl md:text-4xl md:pr-60 mb-2 md:mb-6 font-serif text-gray-700 relative">
             Our Extra-curricular Activities
             <span className="bg-green-900 h-px md:w-1/6 w-1/5 mt-2 absolute bottom-0 md:bottom-[-10px] left-0 transform translate-y-1/2"></span>
         </h2>
