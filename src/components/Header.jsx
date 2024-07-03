@@ -51,13 +51,13 @@ const Header = () => {
 
           {/* Social Media Icons */}
           <div className="flex justify-center md:justify-start mt-4 space-x-4 text-xl text-green-800 md:hidden">
-            <a href="#" className="hover:text-gray-400">
+            <a href="#" className="hover:text-indigo-600">
               <FaFacebookF />
             </a>
-            <a href="#" className="hover:text-gray-400">
+            <a href="#" className="hover:text-blue-400">
               <FaTwitter />
             </a>
-            <a href="#" className="hover:text-gray-400">
+            <a href="#" className="hover:text-pink-400">
               <FaInstagram />
             </a>
           </div>
@@ -65,13 +65,13 @@ const Header = () => {
 
         {/* Social Media Icons */}
         <div className="hidden md:flex justify-center md:justify-start space-x-4 text-green-800 md:mr-[10%]">
-          <a href="#" className="hover:text-gray-400">
+          <a href="#" className="hover:text-indigo-600">
             <FaFacebookF />
           </a>
-          <a href="#" className="hover:text-gray-400">
+          <a href="#" className="hover:text-blue-400">
             <FaTwitter />
           </a>
-          <a href="#" className="hover:text-gray-400">
+          <a href="#" className="hover:text-pink-400">
             <FaInstagram />
           </a>
         </div>
