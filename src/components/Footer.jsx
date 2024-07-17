@@ -1,7 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { FaFacebookF, FaTwitter, FaInstagram, FaGithub } from 'react-icons/fa';
 import Logo from '../assets/logo.jpg';
-import { Link } from 'react-router-dom';
 
 // Define the function within the Footer component or ensure it is passed as a prop
 const closeMenuAndScrollToTop = () => {
@@ -36,7 +36,7 @@ const Footer = () => {
               <img src={Logo} alt="Logo" className="h-20 w-auto" />
             </a>
           </div>
-          <div className="flex flex-col items-center md:mt-8 md:items-center">
+          <nav className="flex flex-col items-center md:mt-8 md:items-center">
             <div className="grid grid-cols-2 md:grid-cols-5 gap-2">
               <ul className="space-y-1">
                 <li> 
@@ -74,7 +74,7 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-          </div>
+          </nav>
           <div className="flex flex-col items-center md:items-center pt-4">
             <div className="flex space-x-8 mt-2 text-2xl md:text-lg">
               <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-yellow-500 text-gray-700"><FaFacebookF /></a>
