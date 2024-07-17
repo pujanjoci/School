@@ -3,11 +3,11 @@ import { FaFacebookF, FaTwitter, FaInstagram, FaGithub } from 'react-icons/fa';
 import Logo from '../assets/logo.jpg';
 import { Link } from 'react-router-dom';
 
-// Ensure you have defined this function somewhere in your code
-  const closeMenuAndScrollToTop = () => {
-    setIsOpen(false);
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
+// Define the function within the Footer component or ensure it is passed as a prop
+const closeMenuAndScrollToTop = () => {
+  // Add your menu closing logic here if needed
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+};
 
 const Footer = () => {
   return (
@@ -60,7 +60,7 @@ const Footer = () => {
                 </li>
               </ul>
               <ul className="space-y-1">
-                 <li> 
+                <li> 
                   <Link to="/contact" className="hover:text-yellow-400 text-gray-700" onClick={closeMenuAndScrollToTop}>
                     Contact
                   </Link>
