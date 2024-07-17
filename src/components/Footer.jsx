@@ -1,6 +1,13 @@
 import React from 'react';
 import { FaFacebookF, FaTwitter, FaInstagram, FaGithub } from 'react-icons/fa';
 import Logo from '../assets/logo.jpg';
+import { Link } from 'react-router-dom';
+
+// Ensure you have defined this function somewhere in your code
+  const closeMenuAndScrollToTop = () => {
+    setIsOpen(false);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
 
 const Footer = () => {
   return (
@@ -25,26 +32,46 @@ const Footer = () => {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
           <div className="hidden md:flex flex-col items-center md:items-center pt-2 hover:cursor-pointer">
-            <a herf="/#">
-            <img src={Logo} alt="Logo" className="h-20 w-auto" />
+            <a href="/#">
+              <img src={Logo} alt="Logo" className="h-20 w-auto" />
             </a>
           </div>
           <div className="flex flex-col items-center md:mt-8 md:items-center">
             <div className="grid grid-cols-2 md:grid-cols-5 gap-2">
               <ul className="space-y-1">
-                <li><a href="/" className="hover:text-yellow-400 text-gray-700">Home</a></li>
+                <li> 
+                  <Link to="/" className="hover:text-yellow-400 text-gray-700" onClick={closeMenuAndScrollToTop}>
+                    Home
+                  </Link>
+                </li>
               </ul>
               <ul className="space-y-1">
-                <li><a href="/School/about" className="hover:text-yellow-400 text-gray-700">About</a></li>
+                <li> 
+                  <Link to="/about" className="hover:text-yellow-400 text-gray-700" onClick={closeMenuAndScrollToTop}>
+                    About
+                  </Link>
+                </li>
               </ul>
               <ul className="space-y-1">
-                <li><a href="/School/gallery" className="hover:text-yellow-400 text-gray-700">Gallery</a></li>
+                <li> 
+                  <Link to="/gallery" className="hover:text-yellow-400 text-gray-700" onClick={closeMenuAndScrollToTop}>
+                    Gallery
+                  </Link>
+                </li>
               </ul>
               <ul className="space-y-1">
-                <li><a href="/School/contact" className="hover:text-yellow-400 text-gray-700">Contact</a></li>
+                 <li> 
+                  <Link to="/contact" className="hover:text-yellow-400 text-gray-700" onClick={closeMenuAndScrollToTop}>
+                    Contact
+                  </Link>
+                </li>
               </ul>
               <ul className="space-y-1">
-                <li><a href="/School/online-admission" className="hover:text-yellow-400 text-gray-700">Academy</a></li>
+                <li> 
+                  <Link to="/online-admission" className="hover:text-yellow-400 text-gray-700" onClick={closeMenuAndScrollToTop}>
+                    Academy
+                  </Link>
+                </li>
               </ul>
             </div>
           </div>
